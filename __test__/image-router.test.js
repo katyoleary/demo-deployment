@@ -10,7 +10,8 @@ const Collection = require('../model/collection.js');
 
 require('jest');
 
-const url = 'http://localhost:3001';
+const PORT = process.env.PORT || 3001;
+const url = `http://localhost:${PORT}`;
 
 const exampleUser = {
   username: 'example user', 
